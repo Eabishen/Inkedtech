@@ -205,7 +205,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--white);
     padding: 10px;
 }
 
