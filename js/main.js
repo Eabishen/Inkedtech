@@ -19,6 +19,9 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    grabCursor: true,
     loop: true,
     pagination: {
         el: ".swiper-pagination",
@@ -31,6 +34,10 @@ var swiper = new Swiper(".mySwiper2", {
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
     },
     breakpoints: {
         640: {

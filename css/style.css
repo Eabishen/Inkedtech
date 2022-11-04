@@ -213,11 +213,15 @@ body {
     margin-bottom: 20px;
 }
 
+.mySwiper2 {
+    height: 45vh;
+}
+
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-    top: 0px !important;
+    bottom: 0px;
 }
 
 .fa-quote-left {
@@ -543,7 +547,7 @@ body {
         font-size: 16px;
     }
 
-    .mySwiper2 .swiper {
+    .mySwiper2 {
         height: auto;
     }
 
@@ -551,7 +555,7 @@ body {
     .swiper-pagination-bullets.swiper-pagination-horizontal,
     .swiper-pagination-custom,
     .swiper-pagination-fraction {
-        bottom: 15% !important;
+        bottom: 0% !important;
     }
 
     #joinus {
