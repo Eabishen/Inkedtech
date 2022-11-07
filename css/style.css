@@ -17,6 +17,38 @@ body {
     font-family: "Poppins";
 }
 
+a:-webkit-any-link,
+a {
+    text-decoration: none;
+}
+
+.navtop {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 200%;
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: grid;
+    place-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    z-index: 100;
+}
+
+.navtop:hover,
+.navtop:focus {
+    color: var(--white);
+}
+
+.navtop:active {
+    opacity: 0.9;
+}
+
 .nav-link {
     font-weight: 500;
     font-size: 18px;
@@ -125,7 +157,7 @@ body {
     color: rgb(73, 73, 73);
 }
 
-.card {
+.cards {
     min-height: 500px;
     border: none;
     margin-bottom: 2rem;
@@ -134,7 +166,6 @@ body {
 
 .card-body {
     text-align: justify;
-    width: 95%;
     margin: 0 auto;
     pointer-events: none;
 }
@@ -173,6 +204,45 @@ body {
     object-fit: cover;
     margin-block: 2rem 0;
     border-radius: 100%;
+}
+
+.coursescontainer {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-inline: 3rem;
+}
+
+.coursecard {
+    border: none;
+    background: rgb(56, 45, 112);
+    background: linear-gradient(
+        45deg,
+        rgba(56, 45, 112, 1) 20%,
+        rgb(172, 170, 215) 100%
+    );
+    border-radius: 30px;
+    margin-block: 20px;
+    min-width: 400px;
+}
+
+.coursecard .card-title {
+    font-size: 22px;
+    color: var(--white);
+}
+
+.img-cont2 {
+    text-align: center;
+}
+.img-cont2 img {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    height: 320px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin-block: 2rem 0;
+    border-radius: 15px;
 }
 
 .slider-overlay1 {
@@ -268,7 +338,8 @@ body {
     width: 100%;
 }
 
-.input-box input {
+.input-box input,
+.input-box textarea {
     padding: 0.8rem 1.2rem;
     width: 100%;
     border-radius: 15px;
@@ -297,7 +368,6 @@ body {
     position: relative;
     display: grid;
     min-height: 240px;
-    place-items: center;
     grid-template-columns: 1fr 1fr;
     margin: 0.5rem 5rem 2rem;
     color: var(--black);
@@ -310,17 +380,41 @@ body {
 }
 
 .boxcontact .left-box .phone,
-.boxcontact .left-box .email {
-    font-size: 20px;
+.boxcontact .left-box .email,
+.boxcontact .left-box .address {
+    font-size: 18px;
 }
 
-.boxcontact input {
+.boxcontact .left-box {
+    width: 80%;
+}
+
+.contact-container {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-container .color-diff {
+    color: black;
+    font-weight: 500;
+}
+
+.contact-container .text-diff {
+    font-size: 15px;
+}
+
+.boxcontact input,
+.input-box textarea {
     padding: 0.8rem 1.2rem;
     width: 100%;
     border-radius: 15px;
     outline: none;
     border: 1px solid var(--primary-color);
     margin: 1rem 0;
+}
+.input-box textarea {
+    resize: none;
+    height: 150px;
 }
 
 .boxcontact input:last-child {
@@ -354,7 +448,8 @@ body {
 #faq,
 #aboutus,
 #team,
-#whyus {
+#whyus,
+#course {
     margin: 4rem 0;
 }
 
@@ -397,7 +492,8 @@ body {
 
 #faq,
 #team,
-#whyus {
+#whyus,
+#course {
     margin: 4rem 0;
 }
 
@@ -446,6 +542,15 @@ body {
 
 /* Responsive */
 
+@media (max-width: 1100px) {
+    .coursescontainer {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        margin-inline: 1rem;
+    }
+}
+
 @media (max-width: 868px) {
     .card-body .card-title {
         text-align: center;
@@ -462,6 +567,13 @@ body {
         color: #444444;
         font-weight: 400;
     }
+    .coursescontainer {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        margin-inline: 0.2rem;
+        gap: 20px;
+    }
 
     .box {
         margin: 1rem;
@@ -471,7 +583,8 @@ body {
     #faq,
     #aboutus,
     #team,
-    #whyus {
+    #whyus,
+    #course {
         margin: 4rem 0;
     }
 
@@ -496,6 +609,9 @@ body {
 }
 
 @media (max-width: 568px) {
+    .navtop {
+        display: none;
+    }
     .swiper-button-prev,
     .swiper-button-next {
         opacity: 0.2;
@@ -509,7 +625,7 @@ body {
         padding-inline: 0.2rem;
     }
 
-    .card {
+    .cards {
         min-height: 10px;
         margin-bottom: 0.5rem;
     }
@@ -578,7 +694,7 @@ body {
         grid-template-columns: 1fr;
         margin: 0.5rem;
         place-items: start;
-        gap: 20px;
+        gap: 40px;
     }
 
     .boxcontact input {
@@ -591,7 +707,8 @@ body {
         font-weight: 500;
     }
 
-    .input-box input {
+    .input-box input,
+    .input-box textarea {
         padding: 0.5rem 0.8rem;
         width: 100%;
         font-size: 14px;
@@ -603,13 +720,37 @@ body {
     }
 
     .boxcontact .left-box .phone,
-    .boxcontact .left-box .email {
+    .boxcontact .left-box .email,
+    .boxcontact .left-box .address {
         font-size: 16px;
         text-align: start;
+    }
+    .boxcontact .left-box {
+        width: 100%;
     }
     .boxcontact .dropmessage {
         font-weight: 500;
         font-size: 16px;
+    }
+
+    .card-body {
+        width: 100%;
+    }
+
+    .coursescontainer {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        margin-inline: 0.5rem;
+    }
+    .coursecard {
+        min-width: 90vw;
+        padding: 0.5rem;
+        margin-block: 10px;
+    }
+    .img-cont2 img {
+        width: 260px;
+        height: 220px;
     }
 
     .footer > div {
@@ -619,7 +760,8 @@ body {
     #faq,
     #aboutus,
     #team,
-    #whyus {
+    #whyus,
+    #course {
         margin: 2rem 0;
     }
     .accoder {
@@ -668,7 +810,13 @@ body {
     .right-box {
         width: 80%;
     }
-    .input-box input {
+
+    .input-box textarea {
+        height: 80px;
+    }
+
+    .input-box input,
+    .input-box textarea {
         font-size: 18px;
     }
     .btn-box button {
