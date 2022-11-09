@@ -75,6 +75,12 @@ a {
     font-weight: 500;
 }
 
+#info {
+    background: url("../assests/backgroundmainlanding\(1\).svg") no-repeat
+        center;
+    background-size: cover;
+}
+
 .custom-swipertop {
     height: 60vh;
 }
@@ -282,7 +288,38 @@ a {
 
 .cust-out {
     margin: 0;
+    border: 1px solid #dee2e6;
+    padding: 3rem 1rem;
+    border-radius: 15px;
+    position: relative;
 }
+
+.qoutes-dots {
+    background: url("../assests/quotes-dot.svg") no-repeat center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    opacity: 0.8;
+}
+
+.swiper2-next,
+.swiper2-prev {
+    font-weight: 700;
+}
+
+.swiper2-next::after,
+.swiper2-prev::after {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px;
+    background-color: white;
+    box-shadow: 0 11px 24px 0 rgba(0, 0, 0, 0.09);
+}
+
 .cust-out .bottom {
     display: flex;
     flex-direction: column;
@@ -293,11 +330,11 @@ a {
 .customer-text {
     font-size: 18px;
     color: var(--black);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .mySwiper2 {
-    height: 45vh;
+    min-height: 45vh;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -313,11 +350,10 @@ a {
 }
 
 .customer-name {
-    font-size: 24px;
+    font-size: 18px;
     width: 100%;
     font-weight: 600;
     color: var(--primary-color);
-    text-align: end;
 }
 
 #joinus {
@@ -350,6 +386,32 @@ a {
 .right-box {
     width: 100%;
 }
+
+/* Test case for Join us */
+/* Test case for Join us */
+/* Test case for Join us */
+/* Test case for Join us */
+/* Test case for Join us */
+
+/* .right-box {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+}
+
+.right-box .input-box {
+    flex: 1;
+} */
+
+/* Test case for Join us ends*/
+/* Test case for Join us ends*/
+/* Test case for Join us ends*/
+/* Test case for Join us ends*/
+/* Test case for Join us ends*/
 
 .input-box input,
 .input-box textarea {
@@ -462,6 +524,7 @@ a {
 #aboutus,
 #team,
 #whyus,
+#review,
 #course {
     margin: 4rem 0;
 }
@@ -506,6 +569,7 @@ a {
 #faq,
 #team,
 #whyus,
+#review,
 #course {
     margin: 4rem 0;
 }
@@ -562,6 +626,37 @@ a {
         grid-template-columns: 1fr 1fr;
         margin-inline: 1rem;
     }
+    /* Test case for Join us */
+    /* Test case for Join us */
+    /* Test case for Join us */
+    /* Test case for Join us */
+    /* Test case for Join us */
+
+    /* .right-box {
+        display: flex;
+        width: 100%;
+        flex: 1;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .right-box .input-box {
+        flex: 1;
+        width: 100%;
+    }
+    .right-box .btn-box {
+        flex: 1;
+        width: 100%;
+    } */
+
+    /* Test case for Join us ends*/
+    /* Test case for Join us ends*/
+    /* Test case for Join us ends*/
+    /* Test case for Join us ends*/
+    /* Test case for Join us ends*/
 }
 
 @media (max-width: 868px) {
@@ -596,6 +691,7 @@ a {
     #aboutus,
     #team,
     #whyus,
+    #review,
     #course {
         margin: 4rem 0;
     }
@@ -664,11 +760,6 @@ a {
     .img-cont img {
         width: 100px;
         height: 100px;
-    }
-
-    #review {
-        padding-top: 4rem;
-        overflow: visible;
     }
 
     .customer-name {
@@ -776,6 +867,7 @@ a {
     #aboutus,
     #team,
     #whyus,
+    #review,
     #course {
         margin: 2rem 0;
     }
@@ -836,5 +928,214 @@ a {
     }
     .btn-box button {
         font-size: 18px;
+    }
+    /* Test case for Join us */
+    /* Test case for Join us */
+    /* Test case for Join us */
+    /* Test case for Join us */
+    /* Test case for Join us */
+
+    /* .right-box {
+        gap: 20px;
+        justify-content: center;
+        padding-right: 0;
+    } */
+
+    /* Test case for Join us ends*/
+    /* Test case for Join us ends*/
+    /* Test case for Join us ends*/
+    /* Test case for Join us ends*/
+    /* Test case for Join us ends*/
+}
+
+/* Testing review section */
+
+/* .figcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 2rem;
+}
+
+.figimage img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    margin-block: 1rem;
+    box-shadow: 0px 0px 20px 5px rgb(56, 45, 112, 0.1);
+}
+
+.figname {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.figreview {
+    color: var(--black);
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+} */
+
+.detailsfull {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 70%;
+    margin: 5rem auto 2rem;
+}
+
+.detailsleft {
+    flex: 1;
+    width: 100%;
+}
+.detailsright {
+    flex: 1;
+    width: 100%;
+}
+
+.detailimage {
+    max-width: 100%;
+}
+
+.detailimage img {
+    object-fit: cover;
+    width: 100%;
+    height: 420px;
+    aspect-ratio: 1/1;
+    text-align: end;
+    border-radius: 30px;
+}
+
+.detailscover {
+    margin-block: 1rem;
+}
+
+.detailsouter .circleheading {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.detailsouter {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding-inline: 10px;
+    margin-block: 10px;
+}
+
+.detailscover .detailscircle {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+}
+
+.detailscover .detailsname {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+}
+
+.detailscover .detailsinfo {
+    color: var(--black);
+    font-size: 14px;
+}
+
+.detailsbtn {
+    width: 100%;
+    flex: 1;
+}
+
+.detailsbtn button {
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px rgb(56, 45, 112, 0.1);
+    transition: all 300ms ease;
+}
+
+.detailsbtn button:hover {
+    opacity: 0.9;
+}
+.detailsbtn a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.detailsright .headingoverview {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--black);
+    opacity: 0.95;
+}
+
+.detailsright .detailquestion {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+.detailsright .detailsanswer {
+    margin-block: 10px;
+}
+
+.detailsright .detailslist {
+    margin-top: 20px;
+}
+
+.detailsright .detailslist i {
+    color: var(--primary-color);
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.detailsright .detailslist .listsview {
+    margin-block: 2px;
+}
+
+@media (max-width: 1030px) {
+    .detailsfull {
+        max-width: 80%;
+        margin: 5rem auto 1rem;
+    }
+}
+@media (max-width: 900px) {
+    .detailsfull {
+        max-width: 90%;
+        margin: 3rem auto 1rem;
+    }
+    .detailimage img {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 510px) {
+    .detailsfull {
+        max-width: 95%;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+    .detailimage {
+        text-align: center;
+    }
+    .detailimage img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
     }
 }
